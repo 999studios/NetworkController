@@ -17,7 +17,13 @@
 		A791E1BE17F3F91B00221D99 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A791E1BD17F3F91B00221D99 /* Default@2x.png */; };
 		A791E1C017F3F91B00221D99 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A791E1BF17F3F91B00221D99 /* Default-568h@2x.png */; };
 		A791E1C317F3F91B00221D99 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A791E1C117F3F91B00221D99 /* MainStoryboard.storyboard */; };
-		A791E1C617F3F91B00221D99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A791E1C517F3F91B00221D99 /* ViewController.m */; };
+		A791E1CF17F3FA2300221D99 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A791E1CE17F3FA2300221D99 /* BaseViewController.m */; };
+		A791E1D217F3FA9800221D99 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = A791E1D117F3FA9800221D99 /* ViewController1.m */; };
+		A791E1D517F3FAA000221D99 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = A791E1D417F3FAA000221D99 /* ViewController2.m */; };
+		A791E1D817F3FAA900221D99 /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = A791E1D717F3FAA800221D99 /* ViewController3.m */; };
+		A791E1DB17F3FE6E00221D99 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A791E1DA17F3FE6E00221D99 /* Reachability.m */; };
+		A791E1DD17F4003400221D99 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A791E1DC17F4003400221D99 /* SystemConfiguration.framework */; };
+		A791E1E017F4019F00221D99 /* NetworkErrorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A791E1DF17F4019F00221D99 /* NetworkErrorViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +41,19 @@
 		A791E1BD17F3F91B00221D99 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		A791E1BF17F3F91B00221D99 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		A791E1C217F3F91B00221D99 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		A791E1C417F3F91B00221D99 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A791E1C517F3F91B00221D99 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A791E1CD17F3FA2300221D99 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		A791E1CE17F3FA2300221D99 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		A791E1D017F3FA9800221D99 /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		A791E1D117F3FA9800221D99 /* ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		A791E1D317F3FAA000221D99 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		A791E1D417F3FAA000221D99 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		A791E1D617F3FAA800221D99 /* ViewController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController3.h; sourceTree = "<group>"; };
+		A791E1D717F3FAA800221D99 /* ViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController3.m; sourceTree = "<group>"; };
+		A791E1D917F3FE6E00221D99 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		A791E1DA17F3FE6E00221D99 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		A791E1DC17F4003400221D99 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A791E1DE17F4019F00221D99 /* NetworkErrorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkErrorViewController.h; sourceTree = "<group>"; };
+		A791E1DF17F4019F00221D99 /* NetworkErrorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkErrorViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A791E1DD17F4003400221D99 /* SystemConfiguration.framework in Frameworks */,
 				A791E1AA17F3F91B00221D99 /* UIKit.framework in Frameworks */,
 				A791E1AC17F3F91B00221D99 /* Foundation.framework in Frameworks */,
 				A791E1AE17F3F91B00221D99 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +91,7 @@
 		A791E1A817F3F91B00221D99 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A791E1DC17F4003400221D99 /* SystemConfiguration.framework */,
 				A791E1A917F3F91B00221D99 /* UIKit.framework */,
 				A791E1AB17F3F91B00221D99 /* Foundation.framework */,
 				A791E1AD17F3F91B00221D99 /* CoreGraphics.framework */,
@@ -83,11 +102,10 @@
 		A791E1AF17F3F91B00221D99 /* NetworkControllerExample */ = {
 			isa = PBXGroup;
 			children = (
+				A791E1CC17F3FA0D00221D99 /* View Controllers */,
 				A791E1B817F3F91B00221D99 /* AppDelegate.h */,
 				A791E1B917F3F91B00221D99 /* AppDelegate.m */,
 				A791E1C117F3F91B00221D99 /* MainStoryboard.storyboard */,
-				A791E1C417F3F91B00221D99 /* ViewController.h */,
-				A791E1C517F3F91B00221D99 /* ViewController.m */,
 				A791E1B017F3F91B00221D99 /* Supporting Files */,
 			);
 			path = NetworkControllerExample;
@@ -96,6 +114,8 @@
 		A791E1B017F3F91B00221D99 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A791E1D917F3FE6E00221D99 /* Reachability.h */,
+				A791E1DA17F3FE6E00221D99 /* Reachability.m */,
 				A791E1B117F3F91B00221D99 /* NetworkControllerExample-Info.plist */,
 				A791E1B217F3F91B00221D99 /* InfoPlist.strings */,
 				A791E1B517F3F91B00221D99 /* main.m */,
@@ -105,6 +125,23 @@
 				A791E1BF17F3F91B00221D99 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A791E1CC17F3FA0D00221D99 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A791E1CD17F3FA2300221D99 /* BaseViewController.h */,
+				A791E1CE17F3FA2300221D99 /* BaseViewController.m */,
+				A791E1D017F3FA9800221D99 /* ViewController1.h */,
+				A791E1D117F3FA9800221D99 /* ViewController1.m */,
+				A791E1D317F3FAA000221D99 /* ViewController2.h */,
+				A791E1D417F3FAA000221D99 /* ViewController2.m */,
+				A791E1D617F3FAA800221D99 /* ViewController3.h */,
+				A791E1D717F3FAA800221D99 /* ViewController3.m */,
+				A791E1DE17F4019F00221D99 /* NetworkErrorViewController.h */,
+				A791E1DF17F4019F00221D99 /* NetworkErrorViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,7 +212,12 @@
 			files = (
 				A791E1B617F3F91B00221D99 /* main.m in Sources */,
 				A791E1BA17F3F91B00221D99 /* AppDelegate.m in Sources */,
-				A791E1C617F3F91B00221D99 /* ViewController.m in Sources */,
+				A791E1CF17F3FA2300221D99 /* BaseViewController.m in Sources */,
+				A791E1D217F3FA9800221D99 /* ViewController1.m in Sources */,
+				A791E1D517F3FAA000221D99 /* ViewController2.m in Sources */,
+				A791E1D817F3FAA900221D99 /* ViewController3.m in Sources */,
+				A791E1DB17F3FE6E00221D99 /* Reachability.m in Sources */,
+				A791E1E017F4019F00221D99 /* NetworkErrorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

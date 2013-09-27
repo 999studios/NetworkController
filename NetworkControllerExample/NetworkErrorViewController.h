@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  NetworkErrorViewController.h
 //  NetworkControllerExample
 //
 //  Created by Muhammad Waris Ali on 26/09/2013.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface NetworkErrorViewController : UIViewController
 
 @end

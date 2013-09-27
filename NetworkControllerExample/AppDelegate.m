@@ -9,10 +9,15 @@
 #import "AppDelegate.h"
 
 @implementation AppDelegate
+@synthesize activeViewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(checkNetworkStatus:) name:kReachabilityChangedNotification object:nil];
+    internetReachability = [Reachability reachabilityForInternetConnection];
+    [internetReachability startNotifier];
+
     return YES;
 }
 							
@@ -43,4 +48,30 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (void)checkNetworkStatus:(NSNotification *)notification
+{
+    NetworkStatus networkStatus = [internetReachability currentReachabilityStatus];
+    switch (networkStatus) {
+        case NotReachable:
+        {
+            NSLog(@"The internet is down.");
+            [activeViewController networkStatusChanged:NO];
+            break;
+        }
+        case ReachableViaWiFi:
+        {
+            NSLog(@"The internet is working via WIFI.");
+            [activeViewController networkStatusChanged:YES];
+            break;
+        }
+        case ReachableViaWWAN:
+        {
+            NSLog(@"The internet is working via WWAN.");
+            [activeViewController networkStatusChanged:YES];
+            break;
+        }
+        default:
+            break;
+    }
+}
 @end
