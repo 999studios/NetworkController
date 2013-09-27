@@ -15,4 +15,5 @@
 }
 - (void)networkStatusChanged:(BOOL)connection;
 - (void)git;
+- (void)newbranch;
 @end
