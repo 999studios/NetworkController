@@ -14,5 +14,5 @@
     NetworkErrorViewController *errorController;
 }
 - (void)networkStatusChanged:(BOOL)connection;
-
+- (void)git;
 @end
